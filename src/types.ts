@@ -9,6 +9,7 @@ export interface Juice {
   flavorProfile: string;
   healthBenefits: string;
   image?: string;
+  labelImage?: string;
 }
 
 export interface CartItem {

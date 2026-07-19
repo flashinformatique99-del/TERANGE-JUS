@@ -8,11 +8,16 @@ export default function DeliveryZones() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <Reveal>
-            <img
-              src="/images/citron-promo.webp"
-              alt="Commandez vos jus Teranga Jus à l'avance, préparés frais à Dakar"
+            <video
+              src="/video/commande.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
               className="w-full rounded-[2rem] shadow-xl"
-            />
+            >
+              <img src="/images/citron-promo.webp" alt="Commandez vos jus Teranga Jus à l'avance" />
+            </video>
           </Reveal>
           <Reveal delay={0.1}>
             <span className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-leaf-500">Livraison</span>

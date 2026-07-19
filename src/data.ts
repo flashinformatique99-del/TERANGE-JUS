@@ -17,6 +17,7 @@ export const JUICES: Juice[] = [
     flavorProfile: "Acidulé, tonique, très désaltérant, arômes floraux intenses.",
     healthBenefits: "Antioxydant puissant, régulateur naturel de tension, riche en fer.",
     image: "/images/bissap.webp",
+    labelImage: "/images/label-bissap.webp",
   },
   {
     id: "baobab",
@@ -30,6 +31,7 @@ export const JUICES: Juice[] = [
     flavorProfile: "Onctueux, doux, légère acidité naturelle, notes lactées réconfortantes.",
     healthBenefits: "Très riche en vitamine C, calcium, potassium et fibres.",
     image: "/images/bouye.webp",
+    labelImage: "/images/label-baobab.webp",
   },
   {
     id: "orange",
@@ -42,6 +44,7 @@ export const JUICES: Juice[] = [
     flavorProfile: "Gorgé de soleil, fruité éclatant et rafraîchissant.",
     healthBenefits: "Boost d'immunité, forte concentration en vitamine C active.",
     image: "/images/orange.webp",
+    labelImage: "/images/label-orange.webp",
   },
   {
     id: "baobab_mangue",
@@ -68,6 +71,7 @@ export const JUICES: Juice[] = [
     flavorProfile: "Exotique, complexe, cocktail sucré-frais pour petits et grands.",
     healthBenefits: "Riche en oligo-éléments, hydratation optimale sous la chaleur.",
     image: "/images/cocktail.webp",
+    labelImage: "/images/label-cocktail_fruits.webp",
   },
   {
     id: "gingembre",
@@ -81,6 +85,7 @@ export const JUICES: Juice[] = [
     flavorProfile: "Corsé, très rafraîchissant, piquant revigorant, fini herbeux.",
     healthBenefits: "Digestion facilitée après un repas copieux, anti-inflammatoire naturel.",
     image: "/images/gingembre.webp",
+    labelImage: "/images/label-gingembre.webp",
   },
   {
     id: "citron",

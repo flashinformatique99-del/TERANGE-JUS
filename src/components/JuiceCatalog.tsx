@@ -42,6 +42,13 @@ export default function JuiceCatalog() {
                 <span className="absolute right-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wide text-leaf-700 shadow-sm">
                   {juice.localName}
                 </span>
+                {juice.labelImage && (
+                  <img
+                    src={juice.labelImage}
+                    alt={`Étiquette ${juice.name}`}
+                    className="absolute left-3 top-3 h-16 w-auto rounded-md object-contain shadow-md"
+                  />
+                )}
               </div>
               <div className="flex flex-1 flex-col p-5">
                 <div className="mb-2 flex items-center gap-2">
@@ -79,11 +86,20 @@ export default function JuiceCatalog() {
               >
                 <X className="h-4 w-4" />
               </button>
-              <img src={selected.image} alt={selected.name} className="h-64 w-full object-cover" />
+              <div className="bg-sand-100">
+                <img src={selected.image} alt={selected.name} className="h-72 w-full object-contain" />
+              </div>
               <div className="space-y-4 p-6">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">{selected.emoji}</span>
                   <h3 className="font-display text-2xl font-semibold text-leaf-900">{selected.name}</h3>
+                  {selected.labelImage && (
+                    <img
+                      src={selected.labelImage}
+                      alt={`Étiquette ${selected.name}`}
+                      className="ml-auto h-14 w-auto rounded-md object-contain shadow-sm"
+                    />
+                  )}
                 </div>
                 <p className="text-sm leading-relaxed text-ink-900/70">{selected.description}</p>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
