@@ -9,19 +9,20 @@ export default function DeliveryZones() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <Reveal>
             <img
-              src="/images/livraison.webp"
-              alt="Livraison glacée de jus Teranga Jus à Dakar"
+              src="/images/citron-promo.webp"
+              alt="Commandez vos jus Teranga Jus à l'avance, préparés frais à Dakar"
               className="w-full rounded-[2rem] shadow-xl"
             />
           </Reveal>
           <Reveal delay={0.1}>
             <span className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-leaf-500">Livraison</span>
             <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-leaf-900 md:text-4xl">
-              Glacée, partout à Dakar
+              Fraîche, partout à Dakar
             </h2>
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-900/60">
-              Nos livreurs transportent vos bouteilles en glacière isolée. Le tarif et le délai s'affichent
-              automatiquement selon votre quartier.
+              Vos jus sont pressés uniquement sur commande, pour rester aussi frais que possible. Passez votre
+              commande au moins 24h à l'avance — le tarif de livraison s'affiche automatiquement selon votre
+              quartier.
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2">

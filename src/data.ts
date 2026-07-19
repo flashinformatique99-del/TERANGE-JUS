@@ -2,7 +2,7 @@ import { Juice, DakarNeighborhood } from "./types";
 
 export const BOTTLE_PRICE = 1800;
 export const PACK6_PRICE = 10000;
-export const PACK25_PRICE = 35000;
+export const PACK25_PRICE = 10000;
 
 export const JUICES: Juice[] = [
   {
@@ -38,7 +38,7 @@ export const JUICES: Juice[] = [
     emoji: "🍊",
     color: "from-citron-400 to-orange-500",
     badgeColor: "bg-orange-500/10 text-orange-700 border-orange-500/20",
-    description: "Pressée de fruits mûris sous le soleil, sans conservateur ni sucre ajouté.",
+    description: "Pressée de fruits mûris sous le soleil, sans conservateur.",
     flavorProfile: "Gorgé de soleil, fruité éclatant et rafraîchissant.",
     healthBenefits: "Boost d'immunité, forte concentration en vitamine C active.",
     image: "/images/orange.webp",
@@ -98,13 +98,13 @@ export const JUICES: Juice[] = [
 ];
 
 export const NEIGHBORHOODS: DakarNeighborhood[] = [
-  { name: "Almadies / Ngor / Yoff", deliveryFee: 1500, estimatedTime: "25-30 min" },
-  { name: "Plateau / Médina / Bel-Air", deliveryFee: 1000, estimatedTime: "30-45 min" },
-  { name: "Mermoz / Fann / Point E / Sacré-Cœur", deliveryFee: 1000, estimatedTime: "25-35 min" },
-  { name: "Parcelles Assainies / Patte d'Oie / Grand-Yoff", deliveryFee: 1200, estimatedTime: "35-45 min" },
-  { name: "Guédiawaye / Pikine / Keur Massar", deliveryFee: 1800, estimatedTime: "45-60 min" },
-  { name: "Rufisque / Diamniadio", deliveryFee: 2500, estimatedTime: "60-90 min" },
-  { name: "Autre Zone de Dakar", deliveryFee: 1500, estimatedTime: "40-50 min" },
+  { name: "Almadies / Ngor / Yoff", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
+  { name: "Plateau / Médina / Bel-Air", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
+  { name: "Mermoz / Fann / Point E / Sacré-Cœur", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
+  { name: "Parcelles Assainies / Patte d'Oie / Grand-Yoff", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
+  { name: "Guédiawaye / Pikine / Keur Massar", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
+  { name: "Rufisque / Diamniadio", deliveryFee: 3000, estimatedTime: "Commande 48h à l'avance" },
+  { name: "Autre Zone de Dakar", deliveryFee: 2000, estimatedTime: "Commande 24h à l'avance" },
 ];
 
 export const TESTIMONIALS = [
@@ -112,7 +112,7 @@ export const TESTIMONIALS = [
     name: "Aminata D.",
     area: "Mermoz",
     quote:
-      "Le Bissap est exactement comme celui de ma grand-mère à Thiès. Livré glacé en 30 minutes pour la Tabaski, tout le monde a adoré.",
+      "Le Bissap est exactement comme celui de ma grand-mère à Thiès. Commandé la veille pour la Tabaski, tout le monde a adoré.",
     rating: 5,
   },
   {
@@ -142,7 +142,7 @@ export const FAQS = [
   },
   {
     q: "Quel est le délai de livraison ?",
-    a: "Entre 25 et 90 minutes selon votre quartier de Dakar. Le délai estimé s'affiche automatiquement une fois votre quartier sélectionné.",
+    a: "Nos jus sont pressés uniquement sur commande, pour garantir une fraîcheur maximale. Merci de commander au moins 24h à l'avance (48h pour Rufisque et Diamniadio, ou pour les grosses commandes événementielles).",
   },
   {
     q: "Puis-je personnaliser mon pack de 6 ?",

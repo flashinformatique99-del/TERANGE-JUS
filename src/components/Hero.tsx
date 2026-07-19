@@ -32,7 +32,7 @@ export default function Hero({ onOrder, onCatalog }: { onOrder: () => void; onCa
           >
             La Teranga se boit
             <br />
-            <span className="italic text-citron-400">glacée.</span>
+            <span className="italic text-citron-400">fraîche.</span>
           </motion.h1>
 
           <motion.p
@@ -42,7 +42,7 @@ export default function Hero({ onOrder, onCatalog }: { onOrder: () => void; onCa
             className="mt-6 max-w-lg text-base leading-relaxed text-sand-200 md:text-lg"
           >
             Sept saveurs sénégalaises pressées à froid — Bissap, Bouye, Gingembre, Orange, Citron —
-            sans conservateur, livrées glacées chez vous en moins d'une heure.
+            sans conservateur, préparées fraîches et livrées chez vous sur commande (24h à l'avance).
           </motion.p>
 
           <motion.div
@@ -72,7 +72,7 @@ export default function Hero({ onOrder, onCatalog }: { onOrder: () => void; onCa
             transition={{ duration: 0.7, delay: 0.45 }}
             className="mt-10 flex flex-wrap gap-x-8 gap-y-3 border-t border-sand-50/10 pt-6 text-xs font-semibold text-sand-300"
           >
-            <span>🧊 Livré glacé</span>
+            <span>📅 Sur commande (24-48h)</span>
             <span>🌿 100% naturel</span>
             <span>🇸🇳 Fabriqué à Dakar</span>
             <span>💳 Paiement à la livraison</span>
@@ -100,7 +100,7 @@ export default function Hero({ onOrder, onCatalog }: { onOrder: () => void; onCa
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-leaf-900/80 to-transparent p-5">
                 <span className="rounded-full bg-sand-50/95 px-3 py-1 font-mono text-[11px] font-bold text-leaf-800">
-                  ❄ Servi glacé, chaque fois
+                  🌿 Préparé frais, sur commande
                 </span>
               </div>
             </motion.div>

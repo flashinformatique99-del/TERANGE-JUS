@@ -1,4 +1,4 @@
-import { Leaf, ThermometerSnowflake, ShieldCheck, Clock } from "lucide-react";
+import { Leaf, CalendarClock, ShieldCheck, Clock } from "lucide-react";
 import Reveal from "./Reveal";
 
 const PILLARS = [
@@ -8,9 +8,9 @@ const PILLARS = [
     text: "Fruits et fleurs locaux, aucun colorant ni conservateur ajouté.",
   },
   {
-    icon: ThermometerSnowflake,
-    title: "Chaîne du froid",
-    text: "Transport en glacières isolées, du pressoir jusqu'à votre porte.",
+    icon: CalendarClock,
+    title: "Uniquement sur commande",
+    text: "Passez commande 24h ou 48h à l'avance pour des jus fraîchement préparés.",
   },
   {
     icon: ShieldCheck,

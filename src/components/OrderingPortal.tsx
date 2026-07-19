@@ -36,7 +36,8 @@ export function getWhatsAppOrderLink(order: Order): string {
   msg += `\n=============================\n`;
   msg += `*💰 TOTAL À PAYER : ${order.totalAmount.toLocaleString("fr-FR")} FCFA*\n`;
   msg += `_(Livraison incluse — paiement Wave, Orange Money ou espèces à la livraison)_\n`;
-  msg += `=============================\n\nMerci de confirmer ma commande glacée ! ❄️🍋`;
+  msg += `_(Commande à préparer 24h à l'avance, 48h pour Rufisque/Diamniadio)_\n`;
+  msg += `=============================\n\nMerci de confirmer ma commande ! 🍋`;
 
   return `https://wa.me/${phoneVal}?text=${encodeURIComponent(msg)}`;
 }
@@ -143,6 +144,9 @@ export default function OrderingPortal() {
           Composez votre commande
         </h2>
         <p className="mt-3 text-sm text-ink-900/60">Vous ne payez qu'à la livraison, après vérification.</p>
+        <p className="mx-auto mt-4 w-fit rounded-full border border-citron-400/40 bg-citron-50 px-4 py-1.5 text-xs font-bold text-leaf-800">
+          ⏱ Commande à passer 24h à l'avance (48h pour Rufisque / Diamniadio)
+        </p>
       </Reveal>
 
       <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-8 lg:grid-cols-12">
@@ -332,7 +336,7 @@ export default function OrderingPortal() {
               <CheckCircle2 className="mx-auto h-12 w-12 text-leaf-600" />
               <h3 className="mt-4 font-display text-xl font-semibold text-leaf-900">Commande #{confirmedOrder.id}</h3>
               <p className="mt-2 text-sm text-ink-900/60">
-                Confirmez l'envoi sur WhatsApp pour que notre équipe prépare votre livraison glacée.
+                Confirmez l'envoi sur WhatsApp pour que notre équipe prépare votre commande (24h à l'avance).
               </p>
               <a
                 href={getWhatsAppOrderLink(confirmedOrder)}
